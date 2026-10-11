@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>โปรไฟล์ของฉัน</title>
+  
+  <!-- บรรทัดนี้ทำหน้าที่เชื่อมโยง (Link) ไฟล์ CSS ภายนอกเข้ามาใช้งาน -->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="index-page">
+
+  <!-- แถบเมนูด้านบน -->
+  <nav>
+    <div class="logo">MyPortfolio</div>
+    <ul class="nav-links">
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="contact.html">ติดต่อ</a></li>
+    </ul>
+  </nav>
+
+  <!-- 1. ส่วนต้อนรับด้านบน (Hero Section สำหรับหน้าแรก) -->
+  <section class="welcome-hero">
+    <h1>ยินดีต้อนรับสู่เว็บพอร์ตโฟลิโอของผม</h1>
+    <p>พื้นที่รวบรวมประวัติ ผลงาน และช่องทางการติดต่อของนักพัฒนาเว็บมือใหม่</p>
+  </section>
+
+  <!-- 2. ส่วนเนื้อหาหลัก (จัดให้อยู่คู่กันตรงกลาง) -->
+  <div class="main-content">
+    
+    <!-- กล่องโปรไฟล์ -->
+    <div class="profile-card">
+      <img src="https://picsum.photos/300/300" alt="รูปโปรไฟล์" class="profile-img">
+      <h1>โปรแกรมเมอร์มือใหม่</h1>
+      <p>กำลังสนุกกับการเขียนโค้ดและพัฒนาเว็บไซต์บน VS Code!</p>
+      <a href="contact.html" class="btn">ติดต่อฉัน</a>
+    </div>
+
+    <!-- กล่องผลงาน -->
+    <div class="projects-section">
+      <h2>ผลงานของฉัน</h2>
+      
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>เว็บไซต์ร้านค้าออนไลน์</h3>
+          <p>เว็บจำลองสำหรับขายสินค้า ออกแบบด้วย HTML และ CSS พื้นฐาน</p>
+        </div>
+
+        <div class="project-card">
+          <h3>เว็บแอปพลิเคชันจดบันทึก</h3>
+          <p>โปรเจกต์ฝึกเขียนโค้ดเพื่อจัดการงานในชีวิตประจำวัน</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+<!-- ส่วนท้ายเว็บไซต์ (Footer) -->
+  <footer>
+    <p>&copy; 2026 MyPortfolio. สร้างด้วยความตั้งใจบน VS Code.</p>
+  </footer>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ติดต่อฉัน - MyPortfolio</title>
+  <!-- เชื่อมโยงไฟล์ CSS ที่อยู่ในโฟลเดอร์ css -->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="contact-page">
+
+  <!-- 1. แถบเมนูด้านบน (Navbar) -->
+  <nav>
+    <div class="logo">MyPortfolio</div>
+    <ul class="nav-links">
+      <!-- เพิ่มลิงก์ย้อนกลับมาหน้าแรกได้ด้วย -->
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="contact.html">ติดต่อ</a></li>
+    </ul>
+  </nav>
+
+  <!-- 2. ส่วนแบนเนอร์หลัก (Hero Section) -->
+<!-- ส่วนฟอร์มติดต่อ -->
+  <section class="hero">
+    <h1>ส่งข้อความหาผม</h1>
+    <p>กรอกข้อมูลของคุณลงในฟอร์มด้านล่างนี้ได้เลยครับ ผมจะรีบติดต่อกลับโดยเร็วที่สุด</p>
+    
+    <!-- 
+      - action="..." คือที่อยู่ที่จะให้ข้อมูลถูกส่งไป (เอา URL จาก Formspree มาใส่ตรงนี้)
+      - method="POST" คือวิธีการส่งข้อมูลแบบลับ/ปลอดภัย
+    -->
+    <form class="contact-form" action="https://formspree.io/f/xwlvqrbk" method="POST">
+      
+      <div class="form-group">
+        <label for="name">ชื่อของคุณ</label>
+        <!-- name="name" สำคัญมาก! Backend จะใช้ชื่อนี้ในการดึงข้อมูล -->
+        <input type="text" id="name" name="name" placeholder="กรอกชื่อ-นามสกุลของคุณ" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">อีเมลของคุณ</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">ข้อความ</label>
+        <textarea id="message" name="message" rows="4" placeholder="พิมพ์ข้อความที่ต้องการพูดคุย..." required></textarea>
+      </div>
+
+      <button type="submit" class="hero-btn">ส่งข้อความ</button>
+    </form>
+
+    
+  </section>
+
+</body>
+<!-- ส่วนท้ายเว็บไซต์ (Footer) -->
+  <footer>
+    <p>&copy; 2026 MyPortfolio. สร้างด้วยความตั้งใจบน VS Code.</p>
+  </footer>
+</html>
