@@ -1,3 +1,4 @@
+ <!-- ช่องทางการติดต่อ -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,26 +10,44 @@
 <body class="contact-page">
 
   <!-- 1. แถบเมนูด้านบน (Navbar) -->
-  <nav>
+    <nav>
     <div class="logo">MyPortfolio</div>
     <ul class="nav-links">
-      <!-- เพิ่มลิงก์ย้อนกลับมาหน้าแรกได้ด้วย -->
       <li><a href="index.html">หน้าแรก</a></li>
-      <li><a href="contact.html">ติดต่อ</a></li>
+      <li><a href="education.html">ประวัติการศึกษา</a></li>
+      <li><a href="experience.html">ประสบการการทำงาน</a></li>
+      <li><a href="contact.html">ช่องทางการติดต่อ</a></li>
     </ul>
   </nav>
+
+  <!-- เนื้อหาหลัก -->
+  <main class="container">
+    <section class="content-card">
+        <h2>ช่องทางการติดต่อ (Contact Information)</h2>
+        
+        <div class="contact-details" style="line-height: 2;">
+            <p><strong>ชื่อ-นามสกุล:</strong> นายธิติวัฒน์ วิมลสุวโรจน์</p>
+            <p><strong>เบอร์โทรศัพท์:</strong> 088-810-0368</p>
+            <p><strong>อีเมล:</strong> thitiwatnakub11@gmail.com</p>
+            <p><strong>LINE ID:</strong> yeennakub11</p>
+            <p><strong>ที่อยู่ปัจจุบัน:</strong> 257/37 ซอยสนิท แขวง/เขตบางซื่อ ถนนประชาราษฎร์สาย 2 กรุงเทพฯ 10800</p>
+        </div>
+    </section>
+  </main>
 
   <!-- 2. ส่วนแบนเนอร์หลัก (Hero Section) -->
 <!-- ส่วนฟอร์มติดต่อ -->
   <section class="hero">
-    <h1>ส่งข้อความหาผม</h1>
-    <p>กรอกข้อมูลของคุณลงในฟอร์มด้านล่างนี้ได้เลยครับ ผมจะรีบติดต่อกลับโดยเร็วที่สุด</p>
+
     
     <!-- 
       - action="..." คือที่อยู่ที่จะให้ข้อมูลถูกส่งไป (เอา URL จาก Formspree มาใส่ตรงนี้)
       - method="POST" คือวิธีการส่งข้อมูลแบบลับ/ปลอดภัย
     -->
     <form class="contact-form" action="https://formspree.io/f/xwlvqrbk" method="POST">
+    <h1 style="text-align: center;">ส่งข้อความหาผม</h1>
+    <p style="text-align: center;">กรอกข้อมูลของคุณลงในฟอร์มด้านล่างนี้ได้เลยครับ ผมจะรีบติดต่อกลับโดยเร็วที่สุด</p>
+    
       
       <div class="form-group">
         <label for="name">ชื่อของคุณ</label>
@@ -51,10 +70,10 @@
 
     
   </section>
-
-</body>
-<!-- ส่วนท้ายเว็บไซต์ (Footer) -->
+  <!-- ส่วนท้ายเว็บไซต์ (Footer) -->
   <footer>
     <p>&copy; 2026 MyPortfolio. สร้างด้วยความตั้งใจบน VS Code.</p>
   </footer>
+
+</body>
 </html>

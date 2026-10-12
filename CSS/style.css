@@ -106,7 +106,7 @@ nav {
 ================================== */
 .hero {
   background-color: #BEBEBE;
-  padding: 80px 20px;
+  padding: 1px 20px;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -147,7 +147,7 @@ nav {
 /* ตกแต่งกล่องฟอร์มสีขาวรอบนอก */
 .contact-form {
   background-color: white;       /* พื้นหลังสีขาว */
-  padding: 30px;                 /* ระยะห่างขอบด้านในทุกด้าน 30 พิกเซล */
+  padding: 35px 250px;;                /* ระยะห่างขอบด้านในทุกด้าน 30 พิกเซล */
   border-radius: 10px;           /* ทำมุมกล่องให้โค้งมน */
   box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* ใส่เงาจาง ๆ ใต้กล่อง */
   width: 100%;                   /* ความกว้างเต็มพื้นที่ที่รองรับได้ */
@@ -252,7 +252,7 @@ body.index-page {
 .welcome-hero {
   background: linear-gradient(135deg, #333333, #444444);
   color: white;
-  padding: 60px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
@@ -352,4 +352,38 @@ footer {
 .btn:active,
 .hero-btn:active {
   transform: scale(0.98);                       /* ย่อปุ่มลงเล็กน้อย (0.98 เท่า) ให้ความรู้สึกเหมือนปุ่มยุบลงไปจริงๆ ตอนนิ้วกด */
+}
+
+/* จัดการกล่องเนื้อหาหลักให้เป็นการ์ดสีขาวแบบหน้าแรก */
+.container {
+    max-width: 900px;         /* กำหนดความกว้างไม่ให้กว้างเกินไป */
+    margin: 40px auto;        /* จัดให้อยู่ตรงกลางหน้าจอ */
+    padding: 0 20px;
+}
+
+.content-card {
+    background-color: #ffffff; /* พื้นหลังสีขาว */
+    padding: 35px 40px;        /* ระยะห่างด้านในกล่อง */
+    border-radius: 12px;       /* ทำมุมกล่องให้โค้งมน */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* ใส่เงาฟุ้งๆ ให้กล่องดูลอยออกมา */
+    text-align: left;
+}
+
+/* ตกแต่งหัวข้อ */
+.content-card h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #4CAF50; /* ขีดเส้นใต้สีเขียวใต้หัวข้อใหญ่ */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.content-card h3 {
+    color: #333333;
+    margin-top: 15px;
+}
+
+/* จัดระยะห่างรายการ Bullet points */
+.content-card ul {
+    padding-left: 20px;
+    line-height: 1.8;
 }
